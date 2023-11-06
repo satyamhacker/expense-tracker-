@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Full stack Booking Appointment App</title>
+</head>
+<body>
+
+    <h1> BOOKING APPOINTMENT APP</h1> <br>
+
+    <form action="/create" method="post">
+
+
+        <label for="pnumber">Selling Price<label><br>
+        <input type="number" id="sellingprice" name="pnumber"><br>
+
+        <label for="email">Product Name<label><br>
+        <input type="email" id="productname" name="email"><br>
+
+        choose a category:  <select name="itemsname" id="items">
+                                <option>Electronic</option>
+
+                                <option>Food</option>
+
+                                <option>Skincare</option>
+
+                            </select><br>
+
+        <button id="button" type="button">Add Product</button>
+        
+    </form><br>
+
+
+    <ul id="electronicitems">
+        <h2>Electronic items</h2>
+
+    </ul>
+
+    <ul id="fooditems">
+        <h2>food items</h2>
+
+    </ul>
+
+    <ul id="skincareitems">
+        <h2>skincare items</h2>
+
+    </ul>
+
+    
+</body>
+<script src="frontend.js" type="text/javascript"></script>
+</html>
