@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense page</title>
+</head>
+<body>
+
+    <h1> Add Expense APP</h1> <br>
+
+
+    <form action="/create" method="post">
+
+    <label for="pnumber">ExpenseAmount<label><br>
+        <input type="number" id="expenseamount" name="pnumber"><br>
+
+        <label for="email">description<label><br>
+        <input type="email" id="description" name="email"><br>
+
+        choose a category:  <select name="itemsname" id="items">
+                                <option>Electronic</option>
+
+                                <option>Food</option>
+
+                                <option>Skincare</option>
+
+                            </select><br>
+
+        <button id="button" type="button">Add Product</button>
+        
+    </form><br><br><br>
+
+    <button id="premiumbutton" data-amount="100000" type="button">Buy Premium</button>
+
+    <button id="downloadexpenses" type="button">Download all expense</button>
+
+    <div id="message"></div><br>
+
+    
+    Expense Size:<select name="expense_size" id="expense_size">
+        <option>5</option>
+
+        <option>10</option>
+
+        <option>15</option>
+
+    </select>
+    <br><br>
+
+    <button id="leaderboard" hidden type="button">Show Leaderboard</button>
+
+    <ul id="additems">
+        <h1>Your Expenses</h1>
+        
+    </ul><br><br>
+
+    <button onclick="next_expense_button()" type="button" id="next_expensebutton">Next expense</button><br><br>
+
+    <button onclick="prev_expense_button()" type="button" id="prev_expensebutton">previous expense</button>
+
+
+    
+
+    <ul id="showleaderboarditems">
+        <h1 hidden id="leaderboardheading">Leader Board</h1>
+        
+
+    </ul>
+
+
+    
+</body>
+<script src="expense.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>
